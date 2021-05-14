@@ -5,8 +5,6 @@ The entire project has less than 2000 lines of code.
 ![image](https://z3.ax1x.com/2021/05/15/gyNWD0.png)
 
 
-
-
 ## Dependencies
 
 - Python >= 3.6
@@ -65,7 +63,7 @@ You can specify more parameters in src/opt.py.
 Results(weights and logs) will default save to exp/default if you dont specify --exp_id.  
 If you scale batch_size, lr should scale too. 
 
-## test
+## Test
 
 ```
 python test.py \
@@ -76,7 +74,7 @@ python test.py \
 ```
 
 
-## demo
+## Demo
 
 ``` 
 python demo.py \
@@ -87,7 +85,7 @@ python demo.py \
 ```
 
 
-## reference
+## Reference
 
 ```text
 https://github.com/xingyizhou/CenterNet
