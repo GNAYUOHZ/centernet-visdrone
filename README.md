@@ -2,7 +2,7 @@
 Implement of centernet on [visdrone2019](http://aiskyeye.com) dataset. And the neck is modified to fpn with deconv.   
 The entire project has less than 2000 lines of code.   
 
-![image](https://z3.ax1x.com/2021/05/15/gyNWD0.png)
+![image](https://z3.ax1x.com/2021/05/15/g6dAiT.png)
 
 
 ## Dependencies
@@ -89,6 +89,7 @@ python demo.py \
 
 ```text
 https://github.com/xingyizhou/CenterNet
+https://github.com/yjh0410/CenterNet-Lite
 https://github.com/tjiiv-cprg/visdrone-det-toolkit-python
 https://blog.csdn.net/mary_0830/article/details/103361664
 ```
