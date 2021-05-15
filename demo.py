@@ -19,30 +19,19 @@ def save_results(opt, image, results, path):
             bbox = np.array(bbox[:4], dtype=np.int32)
 
             class_name = opt.dataset_info["class_name"]
-            txt = f'{class_name[cls_ind-1]}{conf:.1f}'
 
-            font = cv2.FONT_HERSHEY_SIMPLEX
-            cat_size = cv2.getTextSize(text=txt,
-                                       fontFace=font,
-                                       fontScale=0.5,
-                                       thickness=1)[0]
             cv2.rectangle(img=image,
                           pt1=(bbox[0], bbox[1]),
                           pt2=(bbox[2], bbox[3]),
-                          color=[0, 0, 255],
+                          color=[0, 255, 0],
                           thickness=1)
             #txt
-            cv2.rectangle(img=image,
-                          pt1=(bbox[0], bbox[1] - cat_size[1] - 2),
-                          pt2=(bbox[0] + cat_size[0], bbox[1] - 2),
-                          color=[0, 255, 0],
-                          thickness=-1)
             cv2.putText(img=image,
-                        text=txt,
+                        text=f'{class_name[cls_ind-1]}{conf:.1f}',
                         org=(bbox[0], bbox[1] - 2),
-                        fontFace=font,
+                        fontFace=cv2.FONT_HERSHEY_SIMPLEX,
                         fontScale=0.5,
-                        color=(0, 0, 0),
+                        color=(0, 255, 0),
                         thickness=1,
                         lineType=cv2.LINE_AA)
 
