@@ -1,5 +1,5 @@
 # centernet-visdrone
-Implement of CenterNet on [visdrone2019](http://aiskyeye.com) dataset. The neck is modified to fpn with deconv and the down_ratio is set to 2.  
+Implement of CenterNet on [visdrone2019](http://aiskyeye.com) dataset. The neck is modified to fpn with deconv.  
 The entire project has less than 2000 lines of code.   
 
 ![image](https://z3.ax1x.com/2021/05/15/g65sQs.png)
