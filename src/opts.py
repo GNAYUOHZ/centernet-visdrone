@@ -24,7 +24,7 @@ class opts(object):
         # system
         self.parser.add_argument('--gpus', default='0',
                                  help='use comma for multiple gpus')
-        self.parser.add_argument('--vis_thresh', type=float, default=0.3,
+        self.parser.add_argument('--vis_thresh', type=float, default=0.4,
                                  help='visualization threshold.')
 
         # model
