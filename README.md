@@ -61,6 +61,7 @@ python main.py \
 
 You can specify more parameters in src/opt.py.  
 Results(weights and logs) will default save to exp/default if you dont specify --exp_id.  
+Arch supports resnet18,resnet34,resnet50,resnet101,resnet152,res2net50,res2net101. 
 If you scale batch_size, lr should scale too. 
 
 ## Test
