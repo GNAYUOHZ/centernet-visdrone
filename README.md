@@ -1,8 +1,8 @@
 # centernet-visdrone
-Implement of centernet on [visdrone2019](http://aiskyeye.com) dataset. And the neck is modified to fpn with deconv.   
+Implement of CenterNet on [visdrone2019](http://aiskyeye.com) dataset. The neck is modified to fpn with deconv and the down_ratio is set to 2.  
 The entire project has less than 2000 lines of code.   
 
-![image](https://z3.ax1x.com/2021/05/15/g6dAiT.png)
+![image](https://z3.ax1x.com/2021/05/15/g65sQs.png)
 
 
 ## Dependencies
@@ -68,8 +68,8 @@ If you scale batch_size, lr should scale too.
 ```
 python test.py \
 --arch resnet18 \
---load_model <path/to/weight_name.pt> \
 --gpus 0 \
+--load_model <path/to/weight_name.pt> \
 --flip_test 
 ```
 
